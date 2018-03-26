@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myPage(練習中</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top at_top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#header_index">Studio</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section_about">About</a></li>
+        <li><a href="#section_works">Works<span class="sr-only">(current)</span></a></li>
+        <li><a href="#section_contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.nav-collapse-->
+  </div>
+</nav>
+<header id="header_index">
+  <div class="container">
+    <div class="sblock">    
+      <svg id="pic1" viewbox="-50 -50 100 100">
+        <rect x="-16" y="-15" width="5" height="30"></rect>
+        <rect x="-1" y="-15" width="5" height="30"></rect>
+        <rect x="-11" y="-3" width="10" height="5"></rect>
+        <rect x="9" y="-5" width="5" height="20"></rect>
+        <circle cx="13" cy="-10" r="3">
+          <animate begin="7" attributeName="cy" dur="1s" values="-10;-7;-9"></animate>
+          <animate begin="7" attributeName="cx" dur="1s" values="13;14;17"></animate>
+          <animate begin="8" attributeName="cy" dur="2s" values="-9;-11;-14;-19;-27;-40;-61;5;1;-20;20;4;-21"></animate>
+          <animate begin="8" attributeName="cx" dur="2s" values="17;21;25;29;34;38;43;-19;30;-15;5;9;16"></animate>
+          <animate begin="10" attributeName="r" dur="indefinite" values="3,0"></animate>
+        </circle>
+      </svg>
+    </div>
+    <div class="block block1"></div>
+    <div class="block block2">   </div>
+    <div class="explore at_top">EXPLORE</div>
+  </div>
+</header>
+<section id="section_about"> 
+  <!--發現用頁籤傳送看起來會多傳 其實是被上面的導覽列蓋到 也許用開頭就放幾個br解決?-->
+  <div class="container"> 
+    <div class="row"></div>
+  </div>
+</section>
+<section id="section_service"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>svg練習</h1>
+      </div>
+      <div class="col-sm-4"><img class="icon_service" src="" alt=""/>
+        <svg id="pic1" viewbox="-50 -50 100 100">
+          <g>
+            <circle cx="0" cy="0" r="10">
+              <animate attributeName="r" dur="2s" values="10;30;10" repeatCount="indefinite"></animate>
+            </circle>
+            <rect x="-20" y="-20" width="40" height="40"></rect>
+            <animateTransform attributeName="transform" type="rotate" dur="2s" values="0;360" repeatCount="indefinite"></animateTransform>
+          </g>
+        </svg>
+        <h3>耶</h3>
+      </div>
+      <div class="col-sm-4"><img class="icon_service" src="" alt=""/>
+        <svg id="pic3" viewbox="0 0 200 200">
+          <circle cx="0" cy="50" r="3">
+            <animate attributeName="cy" dur="2s" values="50;60;50" repeatCount="indefinite"></animate>
+          </circle>
+          <circle cx="50" cy="80" r="3"> 
+            <animate attributeName="cy" dur="2s" values="80;40;80" repeatCount="indefinite"></animate>
+          </circle>
+          <circle cx="100" cy="60" r="3"> 
+            <animate attributeName="cy" dur="2s" values="60;46;60" repeatCount="indefinite"></animate>
+          </circle>
+          <circle cx="150" cy="20" r="3"> 
+            <animate attributeName="cy" dur="2s" values="20;50;20" repeatCount="indefinite"></animate>
+          </circle>
+          <circle cx="200" cy="40" r="3"> 
+            <animate attributeName="cy" dur="2s" values="40;60;40" repeatCount="indefinite"></animate>
+          </circle>
+          <polyline points="0,50 50,80 100,60 150,20 200,40">
+            <animate attributeName="points" dur="2s" values="0,50 50,80 100,60 150,20 200,40;0,60 50,40 100,46 150,50 200,60;0,50 50,80 100,60 150,20 200,40" repeatCount="indefinite"></animate>
+          </polyline>
+        </svg>
+        <h3>哇唔</h3>
+      </div>
+      <div class="col-sm-4"><img class="icon_service" src="" alt=""/>
+        <svg id="pic5" viewbox="-50 -50 100 100">
+          <g>
+            <circle cx="0" cy="0" r="10">
+              <animate attributeName="r" dur="3s" values="10;250;50;0;5" repeatCount="indefinite"></animate>
+            </circle>
+          </g>
+        </svg>
+        <h3>唔哦哦</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_works">
+  <div class="container" id="app">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>js for loops練習</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 work1">
+        <ul id="board"></ul>
+        <div class="texts">
+          <h4 class="title">foo</h4>
+          <p class="content">bar</p>
+        </div>
+      </div>
+      <div class="col-sm-6 work2">
+        <ul id="board2"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
